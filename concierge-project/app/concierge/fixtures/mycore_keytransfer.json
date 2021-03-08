@@ -1,0 +1,86 @@
+[
+{
+    "model": "mycore.keytransfer",
+    "pk": 1,
+    "fields": {
+        "key_out_data": "2020-01-15T21:32:39Z",
+        "key_in_data": null,
+        "room_id": 1,
+        "guests": 6,
+        "notes": "",
+        "person_id": 1
+    }
+},
+{
+    "model": "mycore.keytransfer",
+    "pk": 2,
+    "fields": {
+        "key_out_data": null,
+        "key_in_data": "2020-01-15T21:33:06Z",
+        "room_id": 1,
+        "guests": null,
+        "notes": "",
+        "person_id": 1
+    }
+},
+{
+    "model": "mycore.keytransfer",
+    "pk": 3,
+    "fields": {
+        "key_out_data": "2020-01-15T21:33:36Z",
+        "key_in_data": null,
+        "room_id": 1,
+        "guests": 6,
+        "notes": "",
+        "person_id": 1
+    }
+},
+{
+    "model": "mycore.keytransfer",
+    "pk": 4,
+    "fields": {
+        "key_out_data": null,
+        "key_in_data": "2020-01-15T21:33:55Z",
+        "room_id": 2,
+        "guests": 4,
+        "notes": "",
+        "person_id": null
+    }
+},
+{
+    "model": "mycore.keytransfer",
+    "pk": 5,
+    "fields": {
+        "key_out_data": "2020-01-15T21:36:12Z",
+        "key_in_data": null,
+        "room_id": 3,
+        "guests": null,
+        "notes": "",
+        "person_id": 2
+    }
+},
+{
+    "model": "mycore.keytransfer",
+    "pk": 6,
+    "fields": {
+        "key_out_data": "2020-01-22T00:00:00Z",
+        "key_in_data": null,
+        "room_id": 2,
+        "guests": 2,
+        "notes": "",
+        "person_id": 2
+    }
+},
+{
+    "model": "mycore.keytransfer",
+    "pk": 7,
+    "fields": {
+        "key_out_data": null,
+        "key_in_data": "2020-01-22T00:00:00Z",
+        "room_id": 2,
+        "guests": 2,
+        "notes": "",
+        "person_id": 2
+    }
+}
+]

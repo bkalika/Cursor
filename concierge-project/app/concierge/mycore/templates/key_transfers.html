@@ -1,0 +1,33 @@
+{% extends "index.html" %}
+{% block title %}
+    <title>Title</title>
+{% endblock %}
+
+{% block form %}
+<h2>Information about key transfer:</h2>
+<table border="1" color="black">
+    <tr bgcolor="silver">
+        <th>Key out data</th>
+        <th>Key in data</th>
+        <th>Room</th>
+        <th>Guests</th>
+        <th>Person</th>
+        <th>Notes</th>
+    </tr>
+    {% for transfer in object_list %}
+    <tr>
+        <td>{{ transfer.key_out_data }}</td>
+        <td>{{ transfer.key_in_data }}</td>
+        <td>{{ transfer.room_id }}</td>
+        <td>{{ transfer.guests }}</td>
+        <td>{{ transfer.person_id }}</td>
+        <td>{{ transfer.notes }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+{{ is_expired }}
+{% endblock %}
+
+{% block content %}
+{% endblock %}

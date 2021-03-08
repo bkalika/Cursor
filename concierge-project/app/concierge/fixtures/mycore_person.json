@@ -1,0 +1,23 @@
+[
+{
+    "model": "mycore.person",
+    "pk": 1,
+    "fields": {
+        "name": "Oleh"
+    }
+},
+{
+    "model": "mycore.person",
+    "pk": 2,
+    "fields": {
+        "name": "Nina"
+    }
+},
+{
+    "model": "mycore.person",
+    "pk": 3,
+    "fields": {
+        "name": "Ivan"
+    }
+}
+]

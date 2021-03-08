@@ -1,0 +1,32 @@
+{% extends "index.html" %}
+{% block title %}
+    <title>Person</title>
+    <link rel="stylesheet" href="person_style.css">
+{% endblock %}
+
+{% block form %}
+
+<h2>All people:</h2>
+<form action="{% url 'person' %}" method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Add person</button>
+</form>
+<br/>
+{% endblock %}
+
+{% block content %}
+<table border="1" bordercolor="black">
+    <tr bgcolor="silver">
+        <th>Id</th>
+        <th>Name</th>
+    </tr>
+    {% for person in all_people %}
+        <tr>
+            <td>{{ person.id }}</td>
+            <td>{{ person.name }}</td>
+        </tr>
+    {% endfor %}
+</table>
+{% endblock %}
+</html>

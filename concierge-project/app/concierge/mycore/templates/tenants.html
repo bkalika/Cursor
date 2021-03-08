@@ -1,0 +1,22 @@
+{% extends "index.html" %}
+{% block title %}
+    <title>Title</title>
+{% endblock %}
+
+{% block form %}
+<table border="1" bordercolor="black">
+    <tr bgcolor="silver">
+        <th>List of tenants</th>
+    </tr>
+    {% for tenant in object_list %}
+    <tr>
+        <td><a href="{% url 'tenantdetail' tenant.id %}">{{ tenant }}</a></td>
+    </tr>
+    {% endfor %}
+</table>
+
+{{ is_expired }}
+{% endblock %}
+
+{% block content %}
+{% endblock %}

@@ -1,0 +1,13 @@
+*~
+*.swp
+*.swo
+*.pyc
+*.log
+*.xml
+data/
+media/
+__pycache__/
+.idea/
+venv/
+env/
+djangoenv/

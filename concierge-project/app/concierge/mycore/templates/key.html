@@ -1,0 +1,28 @@
+{% extends "index.html" %}
+
+{% block title %}
+    <title>Keys</title>
+{% endblock %}
+
+{% block form %}
+<h2>Keys from rooms</h2>
+<form action="{% url 'key' %}" method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Add key</button>
+</form>
+<br/>
+{% endblock %}
+
+{% block content %}
+<table border="1" bordercolor="black">
+    <tr bgcolor="silver">
+        <th>Room ID</th>
+    </tr>
+    {% for key_id in keys %}
+        <tr>
+            <td>{{ key_id.room_id }}</td>
+        </tr>
+    {% endfor %}
+</table>
+{% endblock %}

@@ -1,0 +1,16 @@
+[
+{
+    "model": "mycore.key",
+    "pk": 1,
+    "fields": {
+        "room": 1
+    }
+},
+{
+    "model": "mycore.key",
+    "pk": 2,
+    "fields": {
+        "room": 2
+    }
+}
+]

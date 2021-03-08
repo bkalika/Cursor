@@ -1,0 +1,40 @@
+{% extends "index.html" %}
+
+{% block form %}
+<h2>Tenant</h2>
+<form action="{% url 'tenant' %}" method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <table>
+    {{ form.as_table }}
+    </table>
+    <button type="submit">Add tenant</button>
+</form>
+<br/>
+{% endblock %}
+
+{% block content %}
+<h2>All tenants:</h2>
+<table border="1" color="black">
+    <tr bgcolor="silver">
+        <th>First name</th>
+        <th>Last name</th>
+        <th>Date of birth</th>
+        <th>Phone</th>
+        <th>Photo</th>
+        <th>Notes</th>
+    </tr>
+    {% for tenant in tenants %}
+    <tr>
+        <td>{{ tenant.first_name }}</td>
+        <td><a href="{% url 'tenantdetail' tenant.id %}">{{ tenant.last_name }}</a></td>
+        <td>{{ tenant.date_of_birth }}</td>
+        <td>{{ tenant.phone }}</td>
+    {% if tenant.photo %}
+        <td><img src="{{ tenant.photo.url }}"/></td>
+    {% endif %}
+        <td>{{ tenant.notes }}</td>
+    </tr>
+    {% endfor %}
+<br/>
+{% endblock %}
+</table>

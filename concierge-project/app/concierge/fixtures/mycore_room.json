@@ -1,0 +1,29 @@
+[
+{
+    "model": "mycore.room",
+    "pk": 1,
+    "fields": {
+        "number": 1,
+        "max_tenants": 6,
+        "owner": null
+    }
+},
+{
+    "model": "mycore.room",
+    "pk": 2,
+    "fields": {
+        "number": 2,
+        "max_tenants": 10,
+        "owner": 1
+    }
+},
+{
+    "model": "mycore.room",
+    "pk": 3,
+    "fields": {
+        "number": 3,
+        "max_tenants": 4,
+        "owner": 2
+    }
+}
+]

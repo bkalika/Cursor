@@ -1,0 +1,172 @@
+[
+{
+    "model": "mycore.tenant",
+    "pk": 1,
+    "fields": {
+        "first_name": "Vasil",
+        "last_name": "Karmazin",
+        "date_of_birth": "1993-01-15",
+        "phone": "0634321233",
+        "photo": "",
+        "notes": ""
+    }
+},
+{
+    "model": "mycore.tenant",
+    "pk": 14,
+    "fields": {
+        "first_name": "Stepan",
+        "last_name": "Giga",
+        "date_of_birth": "1998-02-14",
+        "phone": "84344334",
+        "photo": "tenant/hersheys-5th-avenue-chocolate-bar.jpg",
+        "notes": null
+    }
+},
+{
+    "model": "mycore.person",
+    "pk": 1,
+    "fields": {
+        "name": "Oleh"
+    }
+},
+{
+    "model": "mycore.person",
+    "pk": 2,
+    "fields": {
+        "name": "Nina"
+    }
+},
+{
+    "model": "mycore.person",
+    "pk": 3,
+    "fields": {
+        "name": "Ivan"
+    }
+},
+{
+    "model": "mycore.room",
+    "pk": 1,
+    "fields": {
+        "number": 1,
+        "max_tenants": 6,
+        "owner": null
+    }
+},
+{
+    "model": "mycore.room",
+    "pk": 2,
+    "fields": {
+        "number": 2,
+        "max_tenants": 10,
+        "owner": 1
+    }
+},
+{
+    "model": "mycore.room",
+    "pk": 3,
+    "fields": {
+        "number": 3,
+        "max_tenants": 4,
+        "owner": 2
+    }
+},
+{
+    "model": "mycore.key",
+    "pk": 1,
+    "fields": {
+        "room": 1
+    }
+},
+{
+    "model": "mycore.key",
+    "pk": 2,
+    "fields": {
+        "room": 2
+    }
+},
+{
+    "model": "mycore.keytransfer",
+    "pk": 1,
+    "fields": {
+        "key_out_data": "2020-01-15T21:32:39Z",
+        "key_in_data": null,
+        "room_id": 1,
+        "guests": 6,
+        "notes": "",
+        "person_id": 1
+    }
+},
+{
+    "model": "mycore.keytransfer",
+    "pk": 2,
+    "fields": {
+        "key_out_data": null,
+        "key_in_data": "2020-01-15T21:33:06Z",
+        "room_id": 1,
+        "guests": null,
+        "notes": "",
+        "person_id": 1
+    }
+},
+{
+    "model": "mycore.keytransfer",
+    "pk": 3,
+    "fields": {
+        "key_out_data": "2020-01-15T21:33:36Z",
+        "key_in_data": null,
+        "room_id": 1,
+        "guests": 6,
+        "notes": "",
+        "person_id": 1
+    }
+},
+{
+    "model": "mycore.keytransfer",
+    "pk": 4,
+    "fields": {
+        "key_out_data": null,
+        "key_in_data": "2020-01-15T21:33:55Z",
+        "room_id": 2,
+        "guests": 4,
+        "notes": "",
+        "person_id": null
+    }
+},
+{
+    "model": "mycore.keytransfer",
+    "pk": 5,
+    "fields": {
+        "key_out_data": "2020-01-15T21:36:12Z",
+        "key_in_data": null,
+        "room_id": 3,
+        "guests": null,
+        "notes": "",
+        "person_id": 2
+    }
+},
+{
+    "model": "mycore.keytransfer",
+    "pk": 6,
+    "fields": {
+        "key_out_data": "2020-01-22T00:00:00Z",
+        "key_in_data": null,
+        "room_id": 2,
+        "guests": 2,
+        "notes": "",
+        "person_id": 2
+    }
+},
+{
+    "model": "mycore.keytransfer",
+    "pk": 7,
+    "fields": {
+        "key_out_data": null,
+        "key_in_data": "2020-01-22T00:00:00Z",
+        "room_id": 2,
+        "guests": 2,
+        "notes": "",
+        "person_id": 2
+    }
+}
+]

@@ -1,0 +1,22 @@
+{% extends "index.html" %}
+{% block title %}
+    <title>Title</title>
+{% endblock %}
+
+{% block form %}
+<table border="1" bordercolor="black">
+    <tr bgcolor="silver">
+        <th>List of rooms</th>
+    </tr>
+    {% for room in object_list %}
+    <tr>
+        <td>{{ room }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+{{ is_expired }}
+{% endblock %}
+
+{% block content %}
+{% endblock %}

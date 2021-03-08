@@ -1,0 +1,46 @@
+{% extends "index.html" %}
+{% block form %}
+<h2>Rooms</h2>
+<form action="{% url 'room' %}" method="POST">
+    {% csrf_token %}
+    <table>
+{{ form.as_table }}
+    </table>
+    <button type="submit">Add room</button>
+</form>
+<br/>
+{% endblock %}
+
+{% block content  %}
+<h2>Information about rooms:</h2>
+<table border="1" border="black">
+    <tr bgcolor="silver">
+        <th>Room number</th>
+        <th>Maximus tenants</th>
+        <th>Owner ID</th>
+    </tr>
+    {% for room in rooms %}
+    <tr>
+        <td>{{ room.number }}</td>
+        <td>{{ room.max_tenants }}</td>
+        <td>{{ room.owner_id }}</td>
+    </tr>
+    {% endfor %}
+</table>
+<br/>
+<table border="1" border="black">
+    <tr>Person:</tr>
+    <tr bgcolor="silver">
+        <th>ID</th>
+        <th>Name</th>
+    </tr>
+    {% for person in owner %}
+    <tr>
+        <td>{{ person.id }}</td>
+        <td>{{ person.name }}</td>
+    </tr>
+    {% endfor %}
+</table>
+</table>
+
+{% endblock %}

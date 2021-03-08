@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}
+    <title>{{ title }}</title>
+    {% endblock %}
+</head>
+
+<body>
+{% block body %}
+{% endblock %}
+
+{% block form %}
+<h1>Main page</h1>
+{% endblock %}
+
+{% block content %}
+<h1>Urls:</h1>
+
+<table border="1" color="black">
+    <tr bgcolor="silver">
+        <th>№</th>
+        <th>Name</th>
+    </tr>
+    <tr>
+        <th>1</th>
+        <th><a href="{% url 'room' %}"><p>{{ room }} </p></a></th>
+    </tr>
+    <tr>
+        <th>2</th>
+        <th><a href="{% url 'rooms' %}"><p>{{ rooms }} </p></a></th>
+    </tr>
+    <tr>
+        <th>3</th>
+        <th><a href="{% url 'key' %}"><p>{{ key }} </p></a></th>
+    </tr>
+    <tr>
+        <th>4</th>
+        <th><a href="{% url 'keys' %}"><p>{{ keys }} </p></a></th>
+    </tr>
+    <tr>
+        <th>5</th>
+        <th><a href="{% url 'tenant' %}"><p>{{ tenant }} </p></a></th>
+    </tr>
+    <tr>
+        <th>6</th>
+        <th><a href="{% url 'tenants' %}"><p>{{ tenants }} </p></a></th>
+    </tr>
+    <tr>
+        <th>7</th>
+        <th><a href="{% url 'person' %}"><p>{{ person }} </p></a></th>
+    </tr>
+    <tr>
+        <th>8</th>
+        <th><a href="{% url 'people' %}"><p>{{ people }} </p></a></th>
+    </tr>
+    <tr>
+        <th>9</th>
+        <th><a href="{% url 'keytransfer' %}"><p>{{ key_transfer }} </p></a></th>
+    </tr>
+    <tr>
+        <th>10</th>
+        <th><a href="{% url 'keytransfers' %}"><p>{{ key_transfers }} </p></a></th>
+    </tr>
+
+</table>
+
+{% endblock %}
+
+</body>
+</html>
